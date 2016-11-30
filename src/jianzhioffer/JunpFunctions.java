@@ -7,15 +7,15 @@ package jianzhioffer;
 public class JunpFunctions {
 
     public static int JumpFloor(int target) {
-        int[] junp = new int[1000];
-        junp[0] = 1;
-        junp[1] = 2;
+        int[] jump = new int[1000];
+        jump[0] = 1;
+        jump[1] = 2;
         if (target == 1) return 1;
         if (target == 2) return 2;
-        for (int i = 2; i < junp.length; i++) {
-            junp[i] = junp[i - 1] + junp[i - 2];
+        for (int i = 2; i < jump.length; i++) {
+            jump[i] = jump[i - 1] + jump[i - 2];
         }
-        return junp[target - 1];
+        return jump[target - 1];
     }
 
     public static void main(String[] args) {
