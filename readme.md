@@ -1,5 +1,5 @@
 ## 剑指Offer
-最近在公司的时候，比较空闲，想着很久没有刷题了，就想去牛客网将《剑指Offer》的题目刷一遍，增强自己的Java基础与数据结构、算法的知识。
+最近在公司的时候，比较空闲，想着很久没有刷题了，就想去牛客网将《剑指Offer》的题目刷一遍，增强自己的Java基础与数据结构、算法的知识。写的不好，如有问题，还请指出
 
 1. [二维数组中的查找](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ArraySearch.java "二维数组中的查找")
 - [替换空格](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ReplaceSpace.java)
