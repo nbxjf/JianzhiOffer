@@ -1,7 +1,5 @@
 package jianzhioffer;
 
-import java.util.Arrays;
-
 /**
  * Created by Administrator on 2016/11/30 0030.
  * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字
@@ -10,46 +8,46 @@ import java.util.Arrays;
 public class TreeNode {
     // 先序遍历的第一个肯定是根节点，在中序遍历终找出，就将树分成了左子树与右子树，同样先序遍历分成两部分，递归可解
     public static Tree reConstructBinaryTree(int[] pre, int[] in) {
-        Tree root=new Tree(pre[0]);//前序的第一个数定为根
-        int len=pre.length;
+        Tree root = new Tree(pre[0]);//前序的第一个数定为根
+        int len = pre.length;
         //当只有一个数的时候
-        if(len==1){
-            root.left=null;
-            root.right=null;
+        if (len == 1) {
+            root.left = null;
+            root.right = null;
             return root;
         }
         //找到中序中的根位置
-        int rootval=root.value;
+        int rootval = root.value;
         int i;
-        for(i=0;i<len;i++){
-            if(rootval==in[i])
+        for (i = 0; i < len; i++) {
+            if (rootval == in[i])
                 break;
         }
         //创建左子树
-        if(i>0){
-            int[] pr=new int[i];
-            int[] ino=new int[i];
-            for(int j=0;j<i;j++){
-                pr[j]=pre[j+1];
+        if (i > 0) {
+            int[] pr = new int[i];
+            int[] ino = new int[i];
+            for (int j = 0; j < i; j++) {
+                pr[j] = pre[j + 1];
             }
-            for(int j=0;j<i;j++){
-                ino[j]=in[j];
+            for (int j = 0; j < i; j++) {
+                ino[j] = in[j];
             }
-            root.left=reConstructBinaryTree(pr,ino);
-        }else{
-            root.left=null;
+            root.left = reConstructBinaryTree(pr, ino);
+        } else {
+            root.left = null;
         }
         //创建右子树
-        if(len-i-1>0){
-            int[] pr=new int[len-i-1];
-            int[] ino=new int[len-i-1];
-            for(int j=i+1;j<len;j++){
-                ino[j-i-1]=in[j];
-                pr[j-i-1]=pre[j];
+        if (len - i - 1 > 0) {
+            int[] pr = new int[len - i - 1];
+            int[] ino = new int[len - i - 1];
+            for (int j = i + 1; j < len; j++) {
+                ino[j - i - 1] = in[j];
+                pr[j - i - 1] = pre[j];
             }
-            root.right=reConstructBinaryTree(pr,ino);
-        }else{
-            root.right=null;
+            root.right = reConstructBinaryTree(pr, ino);
+        } else {
+            root.right = null;
         }
         return root;
     }
@@ -65,7 +63,7 @@ public class TreeNode {
         public Tree left;
         public Tree right;
 
-        public Tree(int x) {
+        Tree(int x) {
             this.value = x;
         }
 

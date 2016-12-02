@@ -9,7 +9,7 @@ import java.util.*;
 public class ReplaceSpace {
     public static String replaceSpace(StringBuffer str) {
         String tran = str.toString();
-        String res = tran.replaceAll(" ","%20");
+        String res = tran.replaceAll(" ", "%20");
         return res;
     }
 
