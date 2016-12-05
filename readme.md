@@ -19,7 +19,7 @@
 - [合并两个排序的链表](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/TwoListNodeToOne.java)
 - [树的子结构](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/SubStructer.java)
 - [二叉树的镜像](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ImageTree.java)
-- [顺时针打印矩阵](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/printMatrix.java)
+- [顺时针打印矩阵](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ClockwisePrint.java)
 - [包含min函数的栈](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/StackMinFunction.java)
 - [栈的压入、弹出序列](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/JudgeIsPopOrder.java)
 - [从上往下打印二叉树](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/PrintTreeNode.java)
