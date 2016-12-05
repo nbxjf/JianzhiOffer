@@ -39,24 +39,31 @@ public class SubStructer {
 
     public static void main(String[] args) {
         SubStructer d = new SubStructer();
-        TreeNode root = d.new TreeNode(0);
-        TreeNode left1 = d.new TreeNode(1);
-        TreeNode r1 = d.new TreeNode(2);
-        TreeNode left2 = d.new TreeNode(3);
-        TreeNode r2 = d.new TreeNode(4);
+        TreeNode root = d.new TreeNode(1);
+        TreeNode left1 = d.new TreeNode(2);
+        TreeNode right1 = d.new TreeNode(3);
+        TreeNode left2 = d.new TreeNode(4);
+        TreeNode right2 = d.new TreeNode(5);
+        TreeNode left3 = d.new TreeNode(6);
+        TreeNode right3 = d.new TreeNode(7);
 
-        TreeNode root2 = d.new TreeNode(1);
-        TreeNode l1 = d.new TreeNode(3);
-        TreeNode rr2 = d.new TreeNode(4);
+        TreeNode root2 = d.new TreeNode(2);
+        TreeNode l1 = d.new TreeNode(4);
+        TreeNode r1 = d.new TreeNode(5);
+        TreeNode r2 = d.new TreeNode(7);
 
         root.left = left1;
-        root.right = r1;
+        root.right = right1;
         left1.left = left2;
-        left1.right = r2;
+        left1.right = right2;
+        left2.left = left3;
+        right2.right = right3;
 
         root2.left = l1;
-        root2.right = rr2;
+        root2.right = r1;
+        r1.right = r2;
         boolean res = HasSubtree(root, root2);
+        System.out.println(res);
     }
 
 
