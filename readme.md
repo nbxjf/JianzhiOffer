@@ -23,3 +23,4 @@
 - [包含min函数的栈](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/StackMinFunction.java)
 - [栈的压入、弹出序列](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/JudgeIsPopOrder.java)
 - [从上往下打印二叉树](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/PrintTreeNode.java)
+- [二叉搜索树的后序遍历序列](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/JudgeIsLRD.java)
