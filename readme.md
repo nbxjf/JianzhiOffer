@@ -24,3 +24,6 @@
 - [栈的压入、弹出序列](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/JudgeIsPopOrder.java)
 - [从上往下打印二叉树](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/PrintTreeNode.java)
 - [二叉搜索树的后序遍历序列](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/JudgeIsLRD.java)
+- [二叉搜索树与双向链表](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/TreeToLinkedList.java)
+- [最小的K个数](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/MixKNumbers.java)
+- [复杂链表的复制](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/TreeToLinkedList.java)
