@@ -3,7 +3,7 @@ package jianzhioffer;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/12/5 0005.
+ * Created by Jeff_xu on 2016/12/5 0005.
  * 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
  */
 public class PrintTreeNode {

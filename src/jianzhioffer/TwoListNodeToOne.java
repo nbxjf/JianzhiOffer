@@ -1,7 +1,7 @@
 package jianzhioffer;
 
 /**
- * Created by Administrator on 2016/12/1 0001.
+ * Created by Jeff_xu on 2016/12/1 0001.
  * 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
  */
 public class TwoListNodeToOne {

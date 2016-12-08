@@ -3,7 +3,7 @@ package jianzhioffer;
 import java.util.Stack;
 
 /**
- * Created by Administrator on 2016/11/30 0030.
+ * Created by Jeff_xu on 2016/11/30 0030.
  * 输入一个链表，输出该链表中倒数第k个结点。
  */
 public class NodeValue {

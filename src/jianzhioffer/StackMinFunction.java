@@ -1,7 +1,7 @@
 package jianzhioffer;
 
 /**
- * Created by Administrator on 2016/12/5 0005.
+ * Created by Jeff_xu on 2016/12/5 0005.
  * 定义栈的数据结构，请在该类型中实现一个能够得到栈最小元素的min函数。
  */
 public class StackMinFunction {

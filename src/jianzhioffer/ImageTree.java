@@ -1,7 +1,7 @@
 package jianzhioffer;
 
 /**
- * Created by Administrator on 2016/12/5 0005.
+ * Created by Jeff_xu on 2016/12/5 0005.
  * 操作给定的二叉树，将其变换为源二叉树的镜像。
  * 二叉树的镜像定义：源二叉树
  * 8

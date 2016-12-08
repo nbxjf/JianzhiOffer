@@ -3,7 +3,7 @@ package jianzhioffer;
 import java.util.*;
 
 /**
- * Created by Administrator on 2016/11/30 0030.
+ * Created by Jeff_xu on 2016/11/30 0030.
  * 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
  */
 public class TwoStacks {

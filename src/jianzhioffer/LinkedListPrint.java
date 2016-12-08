@@ -3,7 +3,7 @@ package jianzhioffer;
 import java.util.*;
 
 /**
- * Created by Administrator on 2016/11/29 0029.
+ * Created by Jeff_xu on 2016/11/29 0029.
  * 输入一个链表，从尾到头打印链表每个节点的值。
  */
 public class LinkedListPrint {

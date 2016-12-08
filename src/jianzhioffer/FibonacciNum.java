@@ -3,7 +3,7 @@ package jianzhioffer;
 import java.util.Scanner;
 
 /**
- * Created by Administrator on 2016/11/30 0030.
+ * Created by Jeff_xu on 2016/11/30 0030.
  * 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项。
  */
 public class FibonacciNum {

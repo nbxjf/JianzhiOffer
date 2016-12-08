@@ -3,7 +3,7 @@ package jianzhioffer;
 import java.util.Scanner;
 
 /**
- * Created by Administrator on 2016/11/30 0030.
+ * Created by Jeff_xu on 2016/11/30 0030.
  * 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
  */
 public class Number {

@@ -1,7 +1,7 @@
 package jianzhioffer;
 
 /**
- * Created by Administrator on 2016/11/30 0030.
+ * Created by Jeff_xu on 2016/11/30 0030.
  * 输入一个链表，反转链表后，输出链表的所有元素。
  */
 public class LinkedListReverse {
