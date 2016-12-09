@@ -29,3 +29,4 @@
 - [求1+2+3+...+n](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/Sum.java)
 - [不用加减乘除做加法](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/Add.java)
 - [复杂链表的复制](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/TreeToLinkedList.java)
+- [整数中1出现的次数（从1到n整数中1出现的次数）](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/Count1Times.java)
