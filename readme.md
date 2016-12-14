@@ -33,6 +33,8 @@
 30. [丑数](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/UglyNumber.java)
 31. [第一个只出现一次的字符位置](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/FirstOneTimeAppear.java)
 32. [数组中的逆序对](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ReverseMap.java)
+33. [数字在排序数组中出现的次数](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ConutTimesInOrderArray.java)
+34. [二叉树的深度](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/TreeLength.java)
 
 
 
