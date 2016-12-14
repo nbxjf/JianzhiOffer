@@ -32,6 +32,7 @@
 29. [不用加减乘除做加法](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/Add.java)
 30. [丑数](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/UglyNumber.java)
 31. [第一个只出现一次的字符位置](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/FirstOneTimeAppear.java)
+32. [数组中的逆序对](https://github.com/nbxjf/JianzhiOffer/blob/master/src/jianzhioffer/ReverseMap.java)
 
 
 
