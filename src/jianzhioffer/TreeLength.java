@@ -6,14 +6,19 @@ package jianzhioffer;
  */
 public class TreeLength {
     public static int TreeDepth(TreeNode root) {
+        if(root == null){
+            return 0;
+        }
         int left = 1;
         int right = 1;
+        if (root.left == null && root.right == null) {
+            return 1;
+        }
         if (root.left != null) {
             left += TreeDepth(root.left);
-        } else if (root.right != null) {
+        }
+        if (root.right != null) {
             right += TreeDepth(root.right);
-        } else {
-            return 1;
         }
         return left > right ? left : right;
     }
