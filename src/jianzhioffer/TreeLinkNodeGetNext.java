@@ -15,53 +15,39 @@ public class TreeLinkNodeGetNext {
         if (pNode == null) {
             return null;
         }
-        if (pNode.right != null) {
-            return traceFirst(pNode.right);
-        }
-        if (pNode.next != null) {
-            if (pNode.next.right.equals(pNode)) {
-                return pNode.next.next;
+        TreeLinkNode root = traceFirst(pNode);
+        List<TreeLinkNode> zhong = new ArrayList<>();
+        zhongxubianli(root, zhong);
+        for (int i = 0; i < zhong.size(); i++) {
+            if (pNode == zhong.get(i)) {
+                return i == zhong.size() - 1 ? null : zhong.get(i + 1);
             }
-            return pNode.next;
         }
         return null;
     }
 
-    public static TreeLinkNode traceFirst(TreeLinkNode pNode) {
-        if (pNode.left != null) {
-            return traceFirst(pNode.left);
+    private static void zhongxubianli(TreeLinkNode node, List<TreeLinkNode> zhong) {
+        if (node == null) {
+            return;
         }
-        return pNode;
+        if (node.left != null) {
+            zhongxubianli(node.left, zhong);
+        }
+        zhong.add(node);
+        if (node.right != null) {
+            zhongxubianli(node.right, zhong);
+        }
     }
 
-    //public static TreeLinkNode GetNext(TreeLinkNode pNode) {
-    //    List<TreeLinkNode> result = new ArrayList<>();
-    //    middleTrace(pNode, result);
-    //    for (int i = 0; i < result.size() - 1; i++) {
-    //        if (result.get(i).equals(pNode)) {
-    //            return result.get(i + 1);
-    //        }
-    //    }
-    //    return null;
-    //}
-    //
-    //public static void middleTrace(TreeLinkNode pNode, List<TreeLinkNode> result) {
-    //    if (pNode == null) {
-    //        return;
-    //    }
-    //    if (pNode.left != null) {
-    //        middleTrace(pNode.left, result);
-    //    }
-    //    result.add(pNode);
-    //    if (pNode.right != null) {
-    //        middleTrace(pNode.right, result);
-    //    }
-    //    if (pNode.next != null) {
-    //        middleTrace(pNode.next, result);
-    //    }
-    //}
+    private static TreeLinkNode traceFirst(TreeLinkNode pNode) {
+        if (pNode.next == null) {
+            return pNode;
+        } else {
+            return traceFirst(pNode.next);
+        }
+    }
 
-    public static class TreeLinkNode {
+    static class TreeLinkNode {
         int val;
         TreeLinkNode left = null;
         TreeLinkNode right = null;
@@ -93,7 +79,7 @@ public class TreeLinkNodeGetNext {
         p11.next = p10;
         p10.next = p8;
 
-        TreeLinkNode treeLinkNode = GetNext(p7);
+        TreeLinkNode treeLinkNode = GetNext(p11);
 
         System.out.println(treeLinkNode != null ? treeLinkNode.val : null);
     }

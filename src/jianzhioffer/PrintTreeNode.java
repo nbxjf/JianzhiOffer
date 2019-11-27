@@ -8,7 +8,10 @@ import java.util.ArrayList;
  */
 public class PrintTreeNode {
     public static ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
-        if (root == null) return new ArrayList<>(); //输入为{}，返回[]
+        //输入为{}，返回[]
+        if (root == null) {
+            return new ArrayList<>();
+        }
         ArrayList<TreeNode> list = new ArrayList<>();
         ArrayList<Integer> res = new ArrayList<>();
         list.add(root);
@@ -38,8 +41,7 @@ public class PrintTreeNode {
         l1.right = r2;
 
         ArrayList<Integer> res = PrintFromTopToBottom(root);
-        while (res != null && res.size() != 0)
-            System.out.println(res.remove(0));
+        while (res != null && res.size() != 0) { System.out.println(res.remove(0)); }
     }
 
     public static class TreeNode {
