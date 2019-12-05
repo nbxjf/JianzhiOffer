@@ -1,5 +1,8 @@
 package jianzhioffer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Jeff_xu on 2019/10/30.
  * 每年六一儿童节,牛客都会准备一些小礼物去看望孤儿院的小朋友,今年亦是如此。
@@ -16,10 +19,55 @@ package jianzhioffer;
 public class LastRemaining {
 
     public static int lastRemainingSolution(int n, int m) {
-        return 0;
+        if (n <= 0) {
+            return -1;
+        }
+        List<Node> nodeList = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            Node item = new Node(i);
+            nodeList.add(item);
+        }
+        for (int i = 0; i < nodeList.size(); i++) {
+            if (i == nodeList.size() - 1) {
+                nodeList.get(i).next = nodeList.get(0);
+            } else {
+                nodeList.get(i).next = nodeList.get(i + 1);
+            }
+        }
+        Node node = nodeList.get(0);
+        int index = 0;
+        while (node.next != null) {
+            index++;
+            if (index == m - 1) {
+                node.next = node.next.next;
+                index = 0;
+                if (node.equals(node.next)) {
+                    break;
+                }
+            }
+            node = node.next;
+        }
+        return node.getNum();
     }
 
     public static void main(String[] args) {
-        System.out.println(lastRemainingSolution(10, 5));
+        System.out.println(lastRemainingSolution(5, 3));
+    }
+
+    public static class Node {
+        private int num;
+        private Node next;
+
+        public Node(int num) {
+            this.num = num;
+        }
+
+        public int getNum() {
+            return num;
+        }
+
+        public Node getNext() {
+            return next;
+        }
     }
 }
